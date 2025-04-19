@@ -1,0 +1,101 @@
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-gray-900 text-white font-sans">
+      <header className="bg-gray-800 shadow p-6">
+        <h1 className="text-3xl font-bold">Martin Loh Zhuan Jie</h1>
+        <p className="text-sm text-gray-400">Security Engineer | Cybersecurity Enthusiast</p>
+      </header>
+
+      <main className="p-6 max-w-4xl mx-auto">
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">About Me</h2>
+          <p>
+            I am a passionate Security Engineer with a strong background in network security, privileged access
+            management, and cybersecurity consulting. I enjoy tackling complex security problems and helping
+            organizations strengthen their digital infrastructure.
+          </p>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Work Experience</h2>
+          <ul className="space-y-4">
+            <li>
+              <strong>Security Engineer – Digital Defense Solution (Aug 2024 – Present)</strong>
+              <p>Lead security initiatives, monitor threats, and consult clients on cybersecurity best practices.</p>
+            </li>
+            <li>
+              <strong>Tech Support Engineer – BaishanCloud Technology (Sep 2022 – Aug 2024)</strong>
+              <p>Provided 24x7 technical support, analyzed network threats, and managed CDN setups.</p>
+            </li>
+            <li>
+              <strong>Cybersecurity Consultant – Alliance Bank (Jun 2022 – Aug 2022)</strong>
+              <p>Collaborated with vendors for system hardening, and developed a cybersecurity handbook.</p>
+            </li>
+            <li>
+              <strong>IT Infrastructure Intern – ATALIAN Global Services (Apr 2021 – Aug 2021)</strong>
+              <p>Maintained global internal systems and updated security policies across branches.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Projects</h2>
+          <ul className="space-y-4">
+            <li>
+              <strong>Delinea Platform – Malaysia Wealth Fund (Aug 2024 – Jun 2025)</strong>
+              <p>Customized and supported privileged access management with advanced security controls.</p>
+            </li>
+            <li>
+              <strong>Delinea Platform – SG Government Education (Aug 2024 – Dec 2024)</strong>
+              <p>Onboarded privilege accounts, provisioned user access, and enabled session monitoring.</p>
+            </li>
+          </ul>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Certifications</h2>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Delinea – Partner Technical Enablement (2024)</li>
+            <li>Artificial Intelligence Professional Certification – Itronix Solutions (2023)</li>
+            <li>Certified Network Engineer – APU (2022)</li>
+            <li>Microsoft Certified Azure Fundamentals (2021)</li>
+            <li>Rocheston Certified Cybersecurity Engineer Level 1 (2020)</li>
+          </ul>
+        </section>
+
+        <section className="my-10">
+          <h3 className="text-2xl font-semibold border-b pb-2 mb-4">Certification Gallery</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-gray-800 p-4 rounded-xl shadow">
+              <img src="/certs/delinea.png" alt="Delinea Certificate" className="rounded-xl" />
+              <p className="mt-2 text-sm text-center">Delinea - Partner Technical Enablement</p>
+            </div>
+            <div className="bg-gray-800 p-4 rounded-xl shadow">
+              <img src="/certs/ai-cert.png" alt="AI Certificate" className="rounded-xl" />
+              <p className="mt-2 text-sm text-center">AI Professional Certification</p>
+            </div>
+            {/* Add more certificates similarly */}
+          </div>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Education</h2>
+          <ul className="list-disc pl-6">
+            <li>BSc (Hons) Forensic Computing – APU & University of Staffordshire (2022)</li>
+            <li>Foundation in Computing Science – APU (2018)</li>
+          </ul>
+        </section>
+
+        <section className="my-10">
+          <h2 className="text-2xl font-semibold border-b pb-2 mb-4">Contact</h2>
+          <p>Email: <a href="mailto:martin_lzj@outlook.com" className="text-blue-400">martin_lzj@outlook.com</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/zhuan-jie-martin-l-447412113" className="text-blue-400">Profile</a></p>
+        </section>
+      </main>
+
+      <footer className="bg-gray-800 p-4 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Martin Loh Zhuan Jie. All rights reserved.
+      </footer>
+    </div>
+  );
+}
